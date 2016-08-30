@@ -1,0 +1,35 @@
+<html>
+<meta charset="utf-8">
+<header>
+<title>MQTT Client</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/mqtt_client.js"></script>
+</header>
+<body>
+
+<div class="backdiv">
+	<h1>
+		Send message to MQTT
+	</h1>
+	
+	<form id="fm" name="fm" method="post" >
+			<textarea name="query" id="query" cols="70" rows="10" /></textarea>
+	</form>
+	<div>
+	<input type="button" id="btnSend" value="Send Query" onclick="publish_message();" />
+	<input type="button" id="btnReset" value="Reset Query" onclick="clearForm('fm');" />
+	<input type="button" id="btnClear" value="Clear History"  onclick="clearMsg();"/>
+	</div>
+	
+</div>
+
+<div id="msg">
+</div>
+
+</body>
+</html>

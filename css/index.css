@@ -1,0 +1,8 @@
+
+.backdiv{ padding: 40px; }
+.msg{ background:#aaa;padding:.2em; border-bottom:1px #000 solid; color: white;}
+.connection{ background-color:#008000;}
+.receive{ background-color:#0080c0;}
+.send{ background-color:#ff8000;}
+.error{ background-color:#992E36;}
+.test{ background-color:#0000a0;}
